@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,12 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="flexcontainer">
-        <div class="title"><h1>Sketchpad</h1></div>
+        <div class="title">
+            <h1>Sketchpad</h1>
+        </div>
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
@@ -19,10 +23,13 @@
                 <button>Random</button>
                 <button>Reset</button>
             </div>
-            <input type="text" placeholder="size of board" value="16" />
-            <button>Set Size</button>
+            <div>
+                <input type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)" />
+                <button>Set Size</button>
+            </div>
         </div>
     </div>
 </body>
 <script src="main.js"></script>
+
 </html>
