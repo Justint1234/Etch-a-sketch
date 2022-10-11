@@ -51,4 +51,4 @@ function resetBoard() {
 
 document.querySelector('body').addEventListener('click', () =>{
     click = !click;
-})
+});
